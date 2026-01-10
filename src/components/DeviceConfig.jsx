@@ -6,8 +6,8 @@ export default function DeviceConfig({ deviceId, onSaved }) {
   const [config, setConfig] = useState({
     device_id: deviceId,
     field_size: 1000,
-    crop_type: 'maize',
-    crop_stage: 'growth',
+    crop_type: 'rabi',
+    crop_stage: 'germinative',
     soil_type: 'loamy',
     latitude: 12.9716,
     longitude: 77.5946,
@@ -90,12 +90,9 @@ export default function DeviceConfig({ deviceId, onSaved }) {
               onChange={handleChange}
               className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 font-semibold text-slate-900 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200 transition-all"
             >
-              <option value="maize">Maize</option>
-              <option value="wheat">Wheat</option>
-              <option value="rice">Rice</option>
-              <option value="cotton">Cotton</option>
-              <option value="sugarcane">Sugarcane</option>
-              <option value="potato">Potato</option>
+              <option value="rabi">Rabi</option>
+              <option value="kharif">Kharif</option>
+              <option value="zaid">Zaid</option>
             </select>
           </div>
 
@@ -110,10 +107,10 @@ export default function DeviceConfig({ deviceId, onSaved }) {
               onChange={handleChange}
               className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 font-semibold text-slate-900 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200 transition-all"
             >
-              <option value="seedling">Seedling</option>
-              <option value="growth">Growth</option>
-              <option value="flowering">Flowering</option>
+              <option value="germinative">Germinative</option>
+              <option value="vegetative">Vegetative</option>
               <option value="maturity">Maturity</option>
+              <option value="flowering">Flowering</option>
             </select>
           </div>
 
