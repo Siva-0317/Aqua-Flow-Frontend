@@ -75,7 +75,6 @@ The app communicates with the backend via these endpoints:
 - `GET /api/dashboard/device-config/{deviceId}` - Get device configuration
 - `GET /api/dashboard/stats/{deviceId}` - Get statistics
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
 ## Expanding the ESLint configuration
 
